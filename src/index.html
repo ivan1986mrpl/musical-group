@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="description - Landing Page">
-  <title>start | Home</title>
+  <meta name="description" content="description - Landing Page Гурту «Грим та Грім»">
+  <title>Гурт «Грим та Грім»</title>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -18,30 +18,27 @@
   <div class="wrapper">
     <header id="header" class="header" data-js-header>
       <div class="header__container">
+        <a href="#hero" class="header__logo logo" aria-label="home" title="home">G&G</a>
         <div class="header__overlay">
           <nav class="header__menu menu" data-js-header-menu>
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#about" class="menu__link hover-link">ABOUT ME</a>
+                <a href="#story" class="menu__link hover-link">Про гурт</a>
               </li>
               <li class="menu__item">
-                <a href="#resume" class="menu__link hover-link">MY EXPERIENCE</a>
+                <a href="#schedule" class="menu__link hover-link">Концерти</a>
               </li>
               <li class="menu__item">
-                <a href="#skills" class="menu__link hover-link">MY SKILLS</a>
+                <a href="#members" class="menu__link hover-link">Галерея</a>
               </li>
               <li class="menu__item">
-                <a href="#portfolio" class="menu__link hover-link">MY PORTFOLIO</a>
-              </li>
-              <li class="menu__item">
-                <a href="#footer" class="menu__link hover-link">CONTACTS</a>
+                <a href="#contacts" class="menu__link hover-link">Контакти</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="header__actions"></div>
         <button type="button" class="header__burger-button burger-button" data-js-header-burger-button
-          aria-label="Open menu" title="Open menu">
+          aria-label="Open or close menu" title="Open or close menu">
           <span class="burger-button__inner">
             <span class="burger-button__line"></span>
             <span class="burger-button__line"></span>
@@ -52,15 +49,185 @@
     </header>
     <main class="page">
       <section id="hero" class="page__hero hero">
-        <div class="hero__container"></div>
-        <video class="video-background" autoplay muted loop>
-          <source type="video/mp4" src="assets/video/3.mp4">
-        </video>
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Гурт «Грим та Грім»</h1>
+            <div class="hero__text">
+              <p>Справжній український рок, який гуркоче в серці.</p>
+              <p>«Грим та Грім» — це поєднання <span class="blue">потужних</span> гітарних рифів, чесних текстів і
+                вибухової енергії сцени. Ми граємо для тих, хто цінує живий звук, свободу та силу музики.</p>
+              <p><span class="blue">Наші концерти </span> - це завжди контакт з залом, драйв і емоції. Приєднуйся до нас
+                на найближчих виступах і відчуй цей саунд наживо!</p>
+            </div>
+            <button type="button" class="hero__button button button--accent">ЗАМОВИТИ КВИТОК</button>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/img/hero/" alt="background first section" class="hero__img">
+        </div>
+      </section>
+
+      <section id="schedule" class="page__schedule schedule">
+        <div class="schedule__container">
+          <h2 class="schedule__title"></h2>
+          <div class="schedule__content">
+            <table class="schedule__table table">
+              <thead>
+                <tr>
+                  <th>Місто / Заклад</th>
+                  <th>К-сть місць</th>
+                  <th>Дата і час</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Київ — Docker-G Pub</td>
+                  <td>250</td>
+                  <td>25.10.2025, 19:00</td>
+                  <td><button class="button">Замовити квиток</button></td>
+                </tr>
+                <tr>
+                  <td>Львів — !FESTrepublic</td>
+                  <td>400</td>
+                  <td>01.11.2025, 20:00</td>
+                  <td><button class="button">Замовити квиток</button></td>
+                </tr>
+                <tr>
+                  <td>Одеса — Зелений театр</td>
+                  <td>700</td>
+                  <td>09.11.2025, 19:30</td>
+                  <td><button class="button">Замовити квиток</button></td>
+                </tr>
+                <tr>
+                  <td>Харків — ArtZavod</td>
+                  <td>500</td>
+                  <td>16.11.2025, 19:00</td>
+                  <td><button class="button">Замовити квиток</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="members" class="page__members members">
+        <div class="members__container">
+          <h2 class="members__title">Учасники гурту</h2>
+          <ul class="members__list">
+            <li class="members__item">
+              <article class="members__card card">
+                <div class="card__image">
+                  <img src="assets/img/" alt="member group" width="" height="" loading="lazy">
+                </div>
+                <div class="card__info">
+                  <p>Максим — гітара</p>
+                </div>
+              </article>
+            </li>
+            <li class="members__item">
+              <article class="members__card card">
+                <div class="card__image">
+                  <img src="assets/img/" alt="member group" width="" height="" loading="lazy">
+                </div>
+                <div class="card__info">
+                  <p>Олена — вокал</p>
+                </div>
+              </article>
+            </li>
+            <li class="members__item">
+              <article class="members__card card">
+                <div class="card__image">
+                  <img src="assets/img/" alt="member group" width="" height="" loading="lazy">
+                </div>
+                <div class="card__info">
+                  <p>Тарас — барабани</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="story" class="page__story story">
+        <div class="story__container">
+          <h2 class="story__title">Наша історія</h2>
+          <div class="story__content">
+            <div class="story__description">
+              <p class="story__text">Гурт "Грім і Грім" виник із пристрасті до музики, що відчувається серцем.
+                Ми почали свій шлях у невеликій студії в центрі Києва, де кожен акорд і слово були наповнені
+                емоціями. Це було місце, де народжувалися наші перші пісні, і ми вчилися грати разом як
+                єдиний організм.</p>
+              <p class="story__text">За роки нашої діяльності ми виступили на десятках сцен — від маленьких клубів до
+                великих
+                фестивалів. Наша музика — це унікальне поєднання традиційного року із сучасними елементами,
+                яке робить її впізнаваною. Ми не боїмося експериментувати зі звуком, додаючи електронні
+                елементи та народні інструменти.</p>
+              <p class="story__text">Кожен наш виступ — це не просто концерт, а справжня подія. Ми ділимося своєю
+                енергією з
+                публікою і створюємо неповторну атмосферу. Ми віримо, що музика має силу об'єднувати людей,
+                створювати спільноти та надихати на зміни.</p>
+              <p class="story__text">Наш колектив складається з досвідчених музикантів, кожен з яких привносить свій
+                унікальний
+                стиль та бачення. Максим створює неймовірні гітарні рифи, Олена зачаровує своїм вокалом,
+                а Тарас тримає ритм, який змушує серця битися в унісон з музикою.</p>
+            </div>
+            <div class="story__image">
+              <img src="assets/img/" alt="photo" class="story__img" width="" height="" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="page__contacts contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title">Зв'яжись з нами</h2>
+          <div class="contacts__subtitle">Хочеш заказати виступ або маєш питання? Пиши!</div>
+          <div class="contacts__content">
+            <form action="#" class="contacts__form form"></form>
+            <div class="contacts__map">
+              <h3 class="contacts__map-title">Наше місцезнаходження</h3>
+              <div class="contacts__map-location"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="footer" class="footer">
-      <div class="footer__container"></div>
+      <div class="footer__container">
+        <div class="footer__copy">© 2025 «Грим та Грім». Всі права захищені.</div>
+        <ul class="footer__soc1al soc1al">
+          <li class="soc1al__item"><a href="https://www.instagram.com/" class="soc1al__link hover-link"
+              target="_blank">Instagram</a></li>
+          <li class="soc1al__item"><a href="https://www.youtube.com/" class="soc1al__link hover-link" target="_blank">YouTube</a>
+          </li>
+          <li class="soc1al__item"><a href="https://www.facebook.com/" class="soc1al__link hover-link" target="_blank">Facebook</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__contacts-item">
+            <a href="mailto:booking@lotoplay" class="footer__contacts-link hover-link">booking@lotoplay</a>
+          </li>
+          <li class="footer__contacts-item">
+            <a href="tel:+380931234567" class="footer__contacts-link hover-link">+38 (093) 123-45-67</a>
+          </li>
+        </ul>
+      </div>
     </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <button type="button" class="popup__close close-popup" aria-label="Close popup">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 10L10 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10 10L30 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <article class="popup-card"></article>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

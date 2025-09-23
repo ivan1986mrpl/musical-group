@@ -1,7 +1,7 @@
 'use strict';
 
 // import { scrollUp } from './modules/scrollUp';
-// import Header from './modules/Header';
+import Header from './modules/Header';
 // import headerFon from './modules/headerFon';
 // import spollers from './modules/spollers';
 // import { DateUpdater } from './modules/DateUpdater';
@@ -9,7 +9,7 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   // scrollUp();
-  // new Header();
+  new Header();
   // headerFon();
   // spollers();
   // new DateUpdater('.date', { useIntl: false, lang: 'ru' });
