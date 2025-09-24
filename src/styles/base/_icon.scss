@@ -12,7 +12,7 @@
     @include square(var(--size));
 
     content: '';
-    flex-shrink: 0; // тк это флекс элемент, указываем, чтобы не сузился
+    flex-shrink: 0;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

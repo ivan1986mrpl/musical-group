@@ -15,17 +15,14 @@
 
 // .gradient-text {
 //   --gradient-color: #999;
-// 	background: var(--gradient-color);//можно использовать фото
-// 	background-clip: text;//обрезка фона, чтобы он соответствовал тексту
-// 	color: transparent;//делаем текст прозрачным
+// 	background: var(--gradient-color);
+// 	background-clip: text;
+// 	color: transparent;
 // }
 
 .video {
   position: relative;
   overflow: hidden;
-
-  // height: 0;
-  // aspect-ratio: 4 / 3;//удалить здесь и задавать каждому отдельному изображению
   video,
   iframe,
   object,

@@ -66,8 +66,7 @@ option {
 }
 
 button {
-  user-select: none; // нельзя выделить текст в кнопке.
-  // убирает внутренние отступы/границу в Firefox при фокусе.
+  user-select: none;
   &::-moz-focus-inner {
     padding: 0;
     border: 0;
@@ -91,7 +90,6 @@ dd {
   font: inherit;
 }
 
-// Удаление анимаций при системных настройках
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

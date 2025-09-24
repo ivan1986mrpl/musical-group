@@ -1,6 +1,4 @@
 @use '../helpers' as *;
-
-// @use '../base/header/header-fon';
 @use '../base/header/header-shadow';
 @use '../base/header/burger-2';
 @use '../base/header/menu-header';
@@ -30,25 +28,5 @@
     @include hover {
       color: var(--color-red);
     }
-  }
-
-  &__overlay {
-  }
-
-  &__menu {
-  }
-
-  &__burger-button {
-  }
-}
-
-.menu {
-  &__list {
-  }
-
-  &__item {
-  }
-
-  &__link {
   }
 }

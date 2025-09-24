@@ -2,6 +2,7 @@
 
 .popup {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   overflow: hidden auto;
@@ -22,14 +23,22 @@
 
   &__content {
     position: relative;
+    z-index: 120;
     max-width: 800px;
-    background-color: #ffffff;
+    padding: 30px;
+    background: var(--gradient);
+
     border-radius: 20px;
     opacity: 0;
     transition: all 0.4s ease 0s;
 
-    // transform: perspective(600px) translate(0, -100%) rotateX(45deg);
-    transform: scale(0);
+    transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+    // transform: scale(0);
+
+    @media (max-width: em(500)) {
+      width: 100%;
+      padding: 35px 10px;
+    }
   }
 
   &__close {
@@ -38,7 +47,7 @@
     right: 10px;
     width: 40px;
     height: 40px;
-    color: #000000;
+    color: #8e8282;
   }
 
   &__title {
@@ -57,23 +66,7 @@
 
 .popup.open .popup__content {
   opacity: 1;
-  transform: scale(1);
+  // transform: scale(1);
 
-  // transform: perspective(600px) translate(0, 0%) rotateX(0deg);
+  transform: perspective(600px) translate(0, 0%) rotateX(0deg);
 }
-
-/* 
-<a href="#popup" class="popup-link">open popup 1</a>
-<div id="popup" class="popup">
-  <div class="popup__body">
-    <div class="popup__content">
-      <button type="button" class="popup__close close-popup">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 10L10 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M10 10L30 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-*/

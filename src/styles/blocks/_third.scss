@@ -1,9 +1,6 @@
 @use '../helpers' as *;
 
 .members {
-  &__container {
-  }
-
   &__title {
     text-align: center;
 
@@ -25,9 +22,6 @@
     max-width: 310px;
     margin-inline: auto;
   }
-
-  &__card {
-  }
 }
 
 .card {
@@ -41,8 +35,5 @@
 
   &__info {
     padding: 20px 10px;
-  }
-
-  &__title {
   }
 }

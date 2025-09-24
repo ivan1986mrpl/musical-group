@@ -4,23 +4,20 @@ import {
   bodyLock,
   bodyUnlock,
   bodyLockStatus,
-} from '../function';
+} from '../function/function';
 
 export default function popup() {
-  // Делегирование кликов по всему body
   document.body.addEventListener('click', (e) => {
-    // Открытие попапа по клику на .popup-link
-    const popupLink = e.target.closest('.popup-link');
+    const popupLink = e.target.closest('[data-popup-open]');
     if (popupLink) {
       e.preventDefault();
-      const popupName = popupLink.getAttribute('href').replace('#', '');
+      const popupName = popupLink.getAttribute('data-popup-open');
       const currentPopup = document.getElementById(popupName);
       popupOpen(currentPopup);
-      return; // чтобы дальше не искать close-popup при клике по popup-link
+      return;
     }
 
-    // Закрытие попапа по клику на кнопку закрытия
-    const closeBtn = e.target.closest('.close-popup');
+    const closeBtn = e.target.closest('[data-popup-close]');
     if (closeBtn) {
       e.preventDefault();
       const popup = closeBtn.closest('.popup');
@@ -29,7 +26,6 @@ export default function popup() {
     }
   });
 
-  // Делегирование клика по затемнённой области модального окна
   document.body.addEventListener('click', (e) => {
     const openPopup = document.querySelector('.popup.open');
     if (
@@ -41,7 +37,6 @@ export default function popup() {
     }
   });
 
-  // Закрытие по Escape
   document.addEventListener('keydown', (e) => {
     if (e.code === 'Escape') {
       const popupActive = document.querySelector('.popup.open');

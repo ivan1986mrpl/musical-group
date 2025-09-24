@@ -59,14 +59,13 @@
               <p><span class="blue">Наші концерти </span> - це завжди контакт з залом, драйв і емоції. Приєднуйся до нас
                 на найближчих виступах і відчуй цей саунд наживо!</p>
             </div>
-            <button type="button" class="hero__button button button--accent">ЗАМОВИТИ КВИТОК</button>
+            <button data-popup-open="popup" type="button" class="hero__button button button--accent">ЗАМОВИТИ КВИТОК</button>
           </div>
         </div>
         <div class="hero__image">
           <img src="assets/img/Four4/bcg12.webp" alt="background first section" class="hero__img">
         </div>
       </section>
-
       <section id="schedule" class="page__schedule schedule">
         <div class="schedule__container">
           <div class="schedule__wrapper">
@@ -86,25 +85,25 @@
                     <td>Київ — Docker-G Pub</td>
                     <td>250</td>
                     <td>25.10.2025, 19:00</td>
-                    <td><button class="button">Замовити квиток</button></td>
+                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
                   </tr>
                   <tr>
                     <td>Львів — !FESTrepublic</td>
                     <td>400</td>
                     <td>01.11.2025, 20:00</td>
-                    <td><button class="button">Замовити квиток</button></td>
+                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
                   </tr>
                   <tr>
                     <td>Одеса — Зелений театр</td>
                     <td>700</td>
                     <td>09.11.2025, 19:30</td>
-                    <td><button class="button">Замовити квиток</button></td>
+                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
                   </tr>
                   <tr>
                     <td>Харків — ArtZavod</td>
                     <td>500</td>
                     <td>16.11.2025, 19:00</td>
-                    <td><button class="button">Замовити квиток</button></td>
+                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -112,7 +111,6 @@
           </div>
         </div>
       </section>
-
       <section id="members" class="page__members members">
         <div class="members__container">
           <h2 class="members__title">Учасники гурту</h2>
@@ -150,7 +148,6 @@
           </ul>
         </div>
       </section>
-
       <section id="story" class="page__story story">
         <div class="story__container">
           <h2 class="story__title">Наша історія</h2>
@@ -179,7 +176,6 @@
           </div>
         </div>
       </section>
-
       <section id="contacts" class="page__contacts contacts">
         <div class="contacts__container">
           <h2 class="contacts__title">Зв'яжись з нами</h2>
@@ -187,19 +183,19 @@
           <div class="contacts__content">
             <form action="#" id="form" class="contacts__form form" novalidate>
               <fieldset class="form__fieldset">
-                <label class="form__name" for="userName">
-                  Ім'я
+                <label class="form__label form__name" for="userName">
+                  <span class="form__label-text">Ім'я</span>
                   <input type="text" name="user-name" id="userName" required aria-describedby="nameError">
                   <span class="error" id="nameError"></span>
                 </label>
-                <label class="form__email" for="userEmail">
-                  Email
+                <label class="form__label form__email" for="userEmail">
+                  <span class="form__label-text">Email</span>
                   <input type="email" name="user-email" id="userEmail" required aria-describedby="emailError">
                   <span class="error" id="emailError"></span>
                 </label>
               </fieldset>
-              <label class="form__textarea" for="userTextarea">
-                Повідомлення
+              <label class="form__label form__textarea" for="userTextarea">
+                <span class="form__label-text">Повідомлення</span>
                 <textarea name="user-textarea" id="userTextarea" placeholder="Розкажи про свої ідеї..." required
                   aria-describedby="textareaError"></textarea>
                 <span class="error" id="textareaError"></span>
@@ -241,17 +237,36 @@
         </ul>
       </div>
     </footer>
-
     <div id="popup" class="popup">
       <div class="popup__body">
         <div class="popup__content">
-          <button type="button" class="popup__close close-popup" aria-label="Close popup">
+          <button data-popup-close type="button" class="popup__close close-popup" aria-label="Close popup">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30 10L10 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M10 10L30 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <form class="popup__form form"></form>
+          <form action="#" id="form-popup" class="popup__form form" novalidate>
+            <fieldset class="form__fieldset">
+              <label class="form__label form__name" for="userName">
+                <span class="form__label-text">Ім'я</span>
+                <input type="text" name="user-name" id="userName-popup" required aria-describedby="nameError-popup">
+                <span class="error" id="nameError-popup"></span>
+              </label>
+              <label class="form__label form__email" for="userEmail">
+                <span class="form__label-text">Email</span>
+                <input type="email" name="user-email" id="userEmail-popup" required aria-describedby="emailError-popup">
+                <span class="error" id="emailError-popup"></span>
+              </label>
+            </fieldset>
+            <label class="form__label form__textarea" for="userTextarea">
+              <span class="form__label-text">Повідомлення</span>
+              <textarea name="user-textarea" id="userTextarea-popup" placeholder="Розкажи про свої ідеї..." required
+                aria-describedby="textareaError-popup"></textarea>
+              <span class="error" id="textareaError-popup"></span>
+            </label>
+            <button type="submit" class="form__button button">Відправити</button>
+          </form>
         </div>
       </div>
     </div>

@@ -26,10 +26,18 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @media (max-width: em(767.98)) {
+      flex-direction: column;
+    }
   }
 
   &__form {
     flex: 0 1 47%;
+
+    @media (max-width: em(767.98)) {
+      flex: 0 1 100%;
+    }
   }
 
   &__map {
@@ -39,6 +47,10 @@
     background-color: var(--color-dark-2);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
+
+    @media (max-width: em(767.98)) {
+      flex: 0 1 100%;
+    }
   }
 
   &__map-title {
@@ -57,25 +69,38 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 
   &__fieldset {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: em(500)) {
+      flex-direction: column;
+      gap: 35px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
   }
 
   input,
   textarea {
-    padding: 5px;
+    width: 100%;
+    padding: 5px 8px;
     background-color: var(--color-dark-2);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
   }
 
   textarea {
-    min-width: 350px;
-    min-height: 50px;
+    min-height: 60px;
   }
 
   &__name {
@@ -98,17 +123,16 @@
 
 input.invalid,
 textarea.invalid {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 input.valid,
 textarea.valid {
-  border: 2px solid green;
+  border: 1px solid green;
 }
 
 .error {
-  display: block;
-  margin-top: 2px;
+  min-height: 16px;
   font-size: 12px;
   color: red;
 }
