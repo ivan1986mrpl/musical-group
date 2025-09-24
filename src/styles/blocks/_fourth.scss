@@ -1,1 +1,29 @@
 @use '../helpers' as *;
+
+.story {
+  background: var(--gradient);
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: fluid(30, 20);
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__img {
+    float: right;
+    max-width: 40%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    @media (max-width: em(767.98)) {
+      display: block;
+      float: none;
+      max-width: 100%;
+      margin: 0 auto 20px;
+    }
+  }
+}

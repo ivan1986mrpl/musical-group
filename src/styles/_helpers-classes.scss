@@ -20,19 +20,20 @@
 // 	color: transparent;//делаем текст прозрачным
 // }
 
-// .video {
-// 	position: relative;
-// 	overflow: hidden;
-// 	height: 0;
-// 	aspect-ratio: 4 / 3;//удалить здесь и задавать каждому отдельному изображению
-// 	video,
-// 	iframe,
-// 	object,
-// 	embed {
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		width: 100%;
-// 		height: 100%;
-// 	}
-// }
+.video {
+  position: relative;
+  overflow: hidden;
+
+  // height: 0;
+  // aspect-ratio: 4 / 3;//удалить здесь и задавать каждому отдельному изображению
+  video,
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

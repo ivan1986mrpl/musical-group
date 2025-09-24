@@ -1,1 +1,48 @@
 @use '../helpers' as *;
+
+.members {
+  &__container {
+  }
+
+  &__title {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: fluid(30, 20);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 310px;
+    margin-inline: auto;
+  }
+
+  &__card {
+  }
+}
+
+.card {
+  overflow: hidden;
+  background: var(--color-dark-2);
+  border-radius: var(--border-radius-12);
+
+  &__image {
+    aspect-ratio: 1 / 1;
+  }
+
+  &__info {
+    padding: 20px 10px;
+  }
+
+  &__title {
+  }
+}

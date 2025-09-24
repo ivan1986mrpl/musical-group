@@ -1,1 +1,53 @@
 @use '../helpers' as *;
+
+.footer {
+  padding-top: fluid(40, 20);
+  padding-bottom: fluid(40, 20);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media (max-width: em(767.98)) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__copy {
+  }
+
+  &__soc1al {
+    justify-self: end;
+
+    @media (max-width: em(767.98)) {
+      justify-self: start;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__contacts-item {
+  }
+
+  &__contacts-link {
+  }
+}
+
+.soc1al {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+
+  &__item {
+  }
+
+  &__link {
+  }
+}

@@ -10,6 +10,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none;
 }
 
 .header.scroll::before {

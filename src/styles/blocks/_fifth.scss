@@ -1,1 +1,114 @@
 @use '../helpers' as *;
+
+.contacts {
+  background: var(--gradient);
+
+  &__container {
+  }
+
+  &__title {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__form {
+    flex: 0 1 47%;
+  }
+
+  &__map {
+    flex: 0 1 47%;
+    overflow: hidden;
+    padding: 16px;
+    background-color: var(--color-dark-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  &__map-title {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__map-location {
+    overflow: hidden;
+    aspect-ratio: 520 / 300;
+    border-radius: var(--border-radius);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__fieldset {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  input,
+  textarea {
+    padding: 5px;
+    background-color: var(--color-dark-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  textarea {
+    min-width: 350px;
+    min-height: 50px;
+  }
+
+  &__name {
+    height: 30px;
+  }
+
+  &__email {
+    height: 30px;
+  }
+
+  &__textarea {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+}
+
+input.invalid,
+textarea.invalid {
+  border: 2px solid red;
+}
+
+input.valid,
+textarea.valid {
+  border: 2px solid green;
+}
+
+.error {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: red;
+}

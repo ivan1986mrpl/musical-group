@@ -6,7 +6,8 @@
   --font-family: 'Roboto', sans-serif;
   --second-family: 'Roboto', sans-serif;
 
-  --container-width: #{rem(1200)};
+  --container-width: #{rem(1174)};
+  --container-big-width: #{rem(1417)};
   --container-padding-x: #{rem(15)};
   --transition-duration: 0.3s;
   --transition: 0.3s ease 0s;
@@ -16,19 +17,39 @@
   --font-weight: 400;
   --line-height: 1;
 
-  --main-color: var(--color-dark);
-  --second-color: var(--color-orange);
-  --accent-color: var(--color-orange);
-  --hover-color: var(--color-orange);
-  --hover-background: var(--color-orange);
-  --color-bg-body: var(--color-white);
-  --scroll-up: var(--color-orange);
+  --main-color: var(--color-white);
+  --second-color: var(--color-red);
+  --accent-color: var(--color-red);
+  --hover-color: var(--color-red);
+  --hover-background: var(--color-red);
+  --color-bg-body: var(--color-dark);
+  --scroll-up: var(--color-red);
 
   --color-white: #ffffff;
-  --color-light: #fafaf5;
-  --color-dark: #000000;
-  --color-orange: #ffa501;
+  --color-light: #d0d0d0;
+  --color-dark: #0d0d12; // основной фон
+  --color-dark-2: #1b1b24; // фон таблица
+  --color-dark-3: #2a2a3b; // заголовок таблицы
+  --color-yellow: #ffd600;
+  --color-red: #ff3b6a;
+  --color-blue: #3aafff;
 
-  --border: 1px solid var(--color-white);
-  --border-radius: #{rem(8)};
+  --border-radius: #{rem(7)};
+  --border-radius-12: 12px;
+  --color-gradient-start: #1b1b24;
+  --color-gradient-end: #2b0f29;
+  --gradient: linear-gradient(
+    180deg,
+    var(--color-gradient-start) 0%,
+    var(--color-gradient-end) 100%
+  );
+
+  // --gradient: linear-gradient(180deg, #1B1B24 0%, #2B0F29 100%);
+
+  --color-border: #3a3a4a;
+
+  --margin-1: 20px;
+  --margin-2: 25px;
+  --margin-3: 20px;
+  --margin-4: 20px;
 }

@@ -1,9 +1,15 @@
 @use 'helpers' as *;
 
-p:where(:not([class], :last-child)) {
-  --paragraph-margin-bottom: 0.7rem;
+// p:where(:not([class], :last-child)) {
+//   --paragraph-margin-bottom: 0.7rem;
 
-  margin-bottom: var(--paragraph-margin-bottom);
+//   margin-bottom: var(--paragraph-margin-bottom);
+// }
+
+p {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 html {

@@ -1,5 +1,6 @@
 @use '../helpers' as *;
-@use '../base/header/header-fon';
+
+// @use '../base/header/header-fon';
 @use '../base/header/header-shadow';
 @use '../base/header/burger-2';
 @use '../base/header/menu-header';
@@ -10,51 +11,44 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: var(--color-dark);
 
-  &__container {
+  &__container-big {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
 
-    @include adaptive-clamp('column-gap', 40, 20);
     @include adaptive-clamp('min-height', 80, 60);
   }
 
-  &__actions {
+  &__logo {
     position: relative;
     z-index: 5;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: rem(15);
-  }
+    font-size: 16px;
 
-  &__codewars {
-    width: rem(48);
-    height: rem(48);
-    transition: all 0.3s ease 0s;
-
-    @media (any-hover: hover) {
-      &:hover {
-        transform: scale(1.09);
-      }
+    @include hover {
+      color: var(--color-red);
     }
   }
 
-  &__button {
-    padding: rem(14) rem(20);
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
-    border-radius: rem(8);
-    transition: all 0.3s;
+  &__overlay {
+  }
 
-    @media (any-hover: hover) {
-      &:hover {
-        color: var(--color-orange);
-        border: 1px solid var(--color-orange);
-      }
-    }
+  &__menu {
+  }
+
+  &__burger-button {
+  }
+}
+
+.menu {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
   }
 }

@@ -1,47 +1,43 @@
 @use '../helpers' as *;
 
-.table-container {
-  background-color: #2a2a3b;
-  border-radius: 12px;
-  overflow: hidden;
-  max-width: 800px;
-  margin: 0 auto;
+.schedule {
+  &__container {
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    background-color: var(--color-dark-2);
+    border-radius: var(--border-radius-12);
+  }
+
+  &__title {
+    padding: 16px 24px;
+    background-color: var(--color-dark-3);
+  }
+
+  &__content {
+  }
+
+  &__table {
+    width: 100%;
+  }
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
 }
 
 thead {
-  background-color: #2a2a3b;
   text-align: left;
+  background-color: var(--color-dark-3);
 }
 
 th,
 td {
   padding: 16px 20px;
+  border-top: 1px solid var(--color-border);
 }
 
 th {
-  color: #ffffffcc;
   font-weight: 600;
-  font-size: 16px;
-}
-
-td {
-  font-size: 15px;
-  color: #ffffff;
-  border-top: 1px solid #3a3a4a;
-}
-
-.button {
-  background-color: #ff2c6d;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }

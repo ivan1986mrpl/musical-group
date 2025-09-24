@@ -1,4 +1,4 @@
-// @use 'hover';
+@use 'hover';
 
 // @use 'gallery-animation';
 // @use 'icon';
@@ -8,9 +8,10 @@
 // @use 'spollers';
 
 // @use 'timer-countdown';
-@use 'video-fon';
+// @use 'video-fon';
 
 // @use 'mapLazy';
 // @use 'scrollUp';
-// @use 'form/button';
+@use 'form/button';
+
 // @use 'social';
