@@ -206,6 +206,8 @@
               <h3 class="contacts__map-title">Наше місцезнаходження</h3>
               <div class="contacts__map-location video">
                 <iframe
+                  aria-label="map"
+                  title="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22971.77385625384!2d30.504140534230736!3d50.45409464499992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce46f668fa27%3A0x863afbb7f433719a!2sFairmont%20Grand%20Hotel%20Kyiv!5e1!3m2!1sru!2sro!4v1758671972966!5m2!1sru!2sro"
                   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -248,18 +250,18 @@
           </button>
           <form action="#" id="form-popup" class="popup__form form" novalidate>
             <fieldset class="form__fieldset">
-              <label class="form__label form__name" for="userName">
+              <label class="form__label form__name" for="userName-popup">
                 <span class="form__label-text">Ім'я</span>
                 <input type="text" name="user-name" id="userName-popup" required aria-describedby="nameError-popup">
                 <span class="error" id="nameError-popup"></span>
               </label>
-              <label class="form__label form__email" for="userEmail">
+              <label class="form__label form__email" for="userEmail-popup">
                 <span class="form__label-text">Email</span>
                 <input type="email" name="user-email" id="userEmail-popup" required aria-describedby="emailError-popup">
                 <span class="error" id="emailError-popup"></span>
               </label>
             </fieldset>
-            <label class="form__label form__textarea" for="userTextarea">
+            <label class="form__label form__textarea" for="userTextarea-popup">
               <span class="form__label-text">Повідомлення</span>
               <textarea name="user-textarea" id="userTextarea-popup" placeholder="Розкажи про свої ідеї..." required
                 aria-describedby="textareaError-popup"></textarea>
