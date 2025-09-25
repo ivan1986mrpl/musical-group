@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="description - Landing Page Гурту «Грим та Грім»">
-  <title>Гурт «Грим та Грім»</title>
+  <meta name="description" content="description - Landing Page of the band Music band">
+  <title>Band “Music band”</title>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -23,16 +23,16 @@
           <nav class="header__menu menu" data-js-header-menu>
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#story" class="menu__link hover-link">Про гурт</a>
+                <a href="#" data-goto=".story" class="menu__link hover-link">About</a>
               </li>
               <li class="menu__item">
-                <a href="#schedule" class="menu__link hover-link">Концерти</a>
+                <a href="#" data-goto=".schedule" class="menu__link hover-link">Concerts</a>
               </li>
               <li class="menu__item">
-                <a href="#members" class="menu__link hover-link">Галерея</a>
+                <a href="#" data-goto=".members" class="menu__link hover-link">Gallery</a>
               </li>
               <li class="menu__item">
-                <a href="#contacts" class="menu__link hover-link">Контакти</a>
+                <a href="#" data-goto=".contacts" class="menu__link hover-link">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -51,59 +51,115 @@
       <section id="hero" class="page__hero hero">
         <div class="hero__container">
           <div class="hero__content">
-            <h1 class="hero__title">Гурт «Грим та Грім»</h1>
+            <h1 class="hero__title">Band “Music band”</h1>
             <div class="hero__text">
-              <p>Справжній український рок, який гуркоче в серці.</p>
-              <p>«Грим та Грім» — це поєднання <span class="blue">потужних</span> гітарних рифів, чесних текстів і
-                вибухової енергії сцени. Ми граємо для тих, хто цінує живий звук, свободу та силу музики.</p>
-              <p><span class="blue">Наші концерти </span> - це завжди контакт з залом, драйв і емоції. Приєднуйся до нас
-                на найближчих виступах і відчуй цей саунд наживо!</p>
+              <p>True rock that rumbles in your heart.</p>
+              <p>“Music band” is a mix of <span class="blue">powerful</span> guitar riffs, honest lyrics, and
+                explosive stage energy. We play for those who value live sound, freedom, and the power of music.</p>
+              <p><span class="blue">Our concerts</span> are always about connection with the crowd, drive, and emotion.
+                Join us at upcoming shows and feel the sound live!</p>
             </div>
-            <button data-popup-open="popup" type="button" class="hero__button button button--accent">ЗАМОВИТИ КВИТОК</button>
+            <button data-popup-open="popup" type="button" class="hero__button button button--accent">ORDER
+              TICKET</button>
           </div>
         </div>
-        <div class="hero__image">
-          <img src="assets/img/Four4/bcg12.webp" alt="background first section" class="hero__img">
+        <video class="video-background" autoplay muted loop>
+          <source type="video/mp4" src="assets/video/3.mp4">
+        </video>
+      </section>
+      <section id="story" class="page__story story">
+        <div class="story__container">
+          <h2 class="story__title">Our Story</h2>
+          <div class="story__content">
+            <video class="video-block story__video" autoplay muted loop>
+              <source type="video/mp4" src="assets/video/1.mp4">
+            </video>
+            <p class="story__text">The band "Music band" was born from a passion for music that’s felt with the
+              heart.
+              We began our journey in a small studio in the center of Kyiv, where every chord and word was filled with
+              emotion.
+              That’s where our first songs were born, and we learned to play as one.</p>
+            <p class="story__text">Over the years, we’ve performed on dozens of stages — from small clubs to large
+              festivals.
+              Our music is a unique blend of traditional rock and modern elements that make it recognizable.
+              We’re not afraid to experiment with sound, adding electronic vibes and folk instruments.</p>
+            <p class="story__text">Each of our shows is not just a concert but a true event.
+              We share our energy with the audience and create a one-of-a-kind atmosphere.
+              We believe music has the power to unite people, build communities, and inspire change.</p>
+            <p class="story__text">Our group consists of experienced musicians, each bringing a unique
+              style and vision.
+              Maksym creates incredible guitar riffs, Olena captivates with her vocals, and Taras keeps the rhythm that
+              makes hearts beat in sync with the music.</p>
+            <p class="story__text">Over the years, we’ve performed on dozens of stages — from small clubs to large
+              festivals.
+              Our music is a unique blend of traditional rock and modern elements that make it recognizable.
+              We’re not afraid to experiment with sound, adding electronic vibes and folk instruments.</p>
+            <p class="story__text">Each of our shows is not just a concert but a true event.
+              We share our energy with the audience and create a one-of-a-kind atmosphere.
+              We believe music has the power to unite people, build communities, and inspire change.</p>
+            <p class="story__text">Our group consists of experienced musicians, each bringing a unique
+              style and vision.
+              Maksym creates incredible guitar riffs, Olena captivates with her vocals, and Taras keeps the rhythm that
+              makes hearts beat in sync with the music.</p>
+          </div>
         </div>
       </section>
       <section id="schedule" class="page__schedule schedule">
         <div class="schedule__container">
           <div class="schedule__wrapper">
-            <h2 class="schedule__title">Найближчі концерти</h2>
+            <h2 class="schedule__title">Upcoming Concerts</h2>
             <div class="schedule__content">
               <table class="schedule__table table">
                 <thead>
                   <tr>
-                    <th>Місто / Заклад</th>
-                    <th>К-сть місць</th>
-                    <th>Дата і час</th>
+                    <th>City / Venue</th>
+                    <th>Seats</th>
+                    <th>Date & Time</th>
                     <th></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Київ — Docker-G Pub</td>
+                    <td>Brashov — Docker-G Pub</td>
                     <td>250</td>
                     <td>25.10.2025, 19:00</td>
-                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
                   </tr>
                   <tr>
-                    <td>Львів — !FESTrepublic</td>
+                    <td>Bratislava — !FESTrepublic</td>
                     <td>400</td>
                     <td>01.11.2025, 20:00</td>
-                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
                   </tr>
                   <tr>
-                    <td>Одеса — Зелений театр</td>
+                    <td>Oslo — Green Theater</td>
                     <td>700</td>
                     <td>09.11.2025, 19:30</td>
-                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
                   </tr>
                   <tr>
-                    <td>Харків — ArtZavod</td>
+                    <td>Bucharest — ArtZavod</td>
                     <td>500</td>
                     <td>16.11.2025, 19:00</td>
-                    <td><button  data-popup-open="popup" class="button">Замовити квиток</button></td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
+                  </tr>
+                  <tr>
+                    <td>Sibiu — ArtZavod</td>
+                    <td>700</td>
+                    <td>16.11.2026, 19:00</td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
+                  </tr>
+                  <tr>
+                    <td>Berlin — ArtZavod</td>
+                    <td>800</td>
+                    <td>06.09.2025, 19:00</td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
+                  </tr>
+                  <tr>
+                    <td>Paris — ArtZavod</td>
+                    <td>900</td>
+                    <td>11.12.2025, 19:00</td>
+                    <td><button data-popup-open="popup" class="button">Order Ticket</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -113,7 +169,7 @@
       </section>
       <section id="members" class="page__members members">
         <div class="members__container">
-          <h2 class="members__title">Учасники гурту</h2>
+          <h2 class="members__title">Band Members</h2>
           <ul class="members__list">
             <li class="members__item">
               <article class="members__card card">
@@ -121,7 +177,17 @@
                   <img src="assets/img/thirdsection3/1.webp" alt="member group" width="300" height="230" loading="lazy">
                 </div>
                 <div class="card__info">
-                  <h3 class="card__title">Максим — гітара</h3>
+                  <h3 class="card__title">Maks — Guitar</h3>
+                </div>
+              </article>
+            </li>
+            <li class="members__item">
+              <article class="members__card card">
+                <div class="card__image ibg">
+                  <img src="assets/img/thirdsection3/1.webp" alt="member group" width="300" height="230" loading="lazy">
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Aleks — Guitar</h3>
                 </div>
               </article>
             </li>
@@ -131,7 +197,7 @@
                   <img src="assets/img/thirdsection3/2.webp" alt="member group" width="300" height="230" loading="lazy">
                 </div>
                 <div class="card__info">
-                  <h3 class="card__title">Олена — вокал</h3>
+                  <h3 class="card__title">Olena — Vocals</h3>
                 </div>
               </article>
             </li>
@@ -141,50 +207,23 @@
                   <img src="assets/img/thirdsection3/3.webp" alt="member group" width="300" height="230" loading="lazy">
                 </div>
                 <div class="card__info">
-                  <h3 class="card__title">Тарас — барабани</h3>
+                  <h3 class="card__title">Nic — Drums</h3>
                 </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section id="story" class="page__story story">
-        <div class="story__container">
-          <h2 class="story__title">Наша історія</h2>
-          <div class="story__content">
-            <img src="assets/img/Four4/bcg12.webp" alt="photo" class="story__img" width="454" height="205"
-              loading="lazy">
-            <p class="story__text">Гурт "Грім і Грім" виник із пристрасті до музики, що відчувається серцем.
-              Ми почали свій шлях у невеликій студії в центрі Києва, де кожен акорд і слово були наповнені
-              емоціями. Це було місце, де народжувалися наші перші пісні, і ми вчилися грати разом як
-              єдиний організм.</p>
-            <p class="story__text">За роки нашої діяльності ми виступили на десятках сцен — від маленьких клубів до
-              великих
-              фестивалів. Наша музика — це унікальне поєднання традиційного року із сучасними елементами,
-              яке робить її впізнаваною. Ми не боїмося експериментувати зі звуком, додаючи електронні
-              елементи та народні інструменти.</p>
-            <p class="story__text story__text--long">Кожен наш виступ — це не просто концерт, а справжня подія. Ми
-              ділимося своєю
-              енергією з
-              публікою і створюємо неповторну атмосферу. Ми віримо, що музика має силу об'єднувати людей,
-              створювати спільноти та надихати на зміни.</p>
-            <p class="story__text story__text--long">Наш колектив складається з досвідчених музикантів, кожен з яких
-              привносить свій
-              унікальний
-              стиль та бачення. Максим створює неймовірні гітарні рифи, Олена зачаровує своїм вокалом,
-              а Тарас тримає ритм, який змушує серця битися в унісон з музикою.</p>
-          </div>
-        </div>
-      </section>
+
       <section id="contacts" class="page__contacts contacts">
         <div class="contacts__container">
-          <h2 class="contacts__title">Зв'яжись з нами</h2>
-          <div class="contacts__subtitle">Хочеш заказати виступ або маєш питання? Пиши!</div>
+          <h2 class="contacts__title">Get in Touch</h2>
+          <div class="contacts__subtitle">Want to book a show or have a question? Write to us!</div>
           <div class="contacts__content">
             <form action="#" id="form" class="contacts__form form" novalidate>
               <fieldset class="form__fieldset">
                 <label class="form__label form__name" for="userName">
-                  <span class="form__label-text">Ім'я</span>
+                  <span class="form__label-text">Name</span>
                   <input type="text" name="user-name" id="userName" required aria-describedby="nameError">
                   <span class="error" id="nameError"></span>
                 </label>
@@ -195,20 +234,18 @@
                 </label>
               </fieldset>
               <label class="form__label form__textarea" for="userTextarea">
-                <span class="form__label-text">Повідомлення</span>
-                <textarea name="user-textarea" id="userTextarea" placeholder="Розкажи про свої ідеї..." required
+                <span class="form__label-text">Message</span>
+                <textarea name="user-textarea" id="userTextarea" placeholder="Tell us your ideas..." required
                   aria-describedby="textareaError"></textarea>
                 <span class="error" id="textareaError"></span>
               </label>
-              <button type="submit" class="form__button button">Відправити</button>
+              <button type="submit" class="form__button button">Send</button>
             </form>
             <div class="contacts__map">
-              <h3 class="contacts__map-title">Наше місцезнаходження</h3>
+              <h3 class="contacts__map-title">Our Location</h3>
               <div class="contacts__map-location video">
-                <iframe
-                  aria-label="map"
-                  title="map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22971.77385625384!2d30.504140534230736!3d50.45409464499992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce46f668fa27%3A0x863afbb7f433719a!2sFairmont%20Grand%20Hotel%20Kyiv!5e1!3m2!1sru!2sro!4v1758671972966!5m2!1sru!2sro"
+                <iframe aria-label="map" title="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84829.61941668772!2d25.514062045964305!3d45.6524484812142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2z0JHRgNCw0YjQvtCy!5e1!3m2!1sru!2sro!4v1758789765656!5m2!1sru!2sro"
                   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
@@ -218,31 +255,26 @@
     </main>
     <footer id="footer" class="footer">
       <div class="footer__container">
-        <div class="footer__copy">© 2025 «Грим та Грім». Всі права захищені.</div>
+        <div class="footer__copy">© 2025 “Music band”. All rights reserved.</div>
         <ul class="footer__soc1al soc1al">
           <li class="soc1al__item"><a href="https://www.instagram.com/" class="soc1al__link hover-link"
               target="_blank">Instagram</a></li>
           <li class="soc1al__item"><a href="https://www.youtube.com/" class="soc1al__link hover-link"
-              target="_blank">YouTube</a>
-          </li>
+              target="_blank">YouTube</a></li>
           <li class="soc1al__item"><a href="https://www.facebook.com/" class="soc1al__link hover-link"
-              target="_blank">Facebook</a>
-          </li>
+              target="_blank">Facebook</a></li>
         </ul>
-        <ul class="footer__contacts">
-          <li class="footer__contacts-item">
-            <a href="mailto:booking@lotoplay" class="footer__contacts-link hover-link">booking@lotoplay</a>
-          </li>
-          <li class="footer__contacts-item">
-            <a href="tel:+380931234567" class="footer__contacts-link hover-link">+38 (093) 123-45-67</a>
-          </li>
-        </ul>
+        <address class="footer__contacts">
+          <a href="mailto:booking@loplay.com" class="footer__contacts-link hover-link">booking@loplay.com</a>
+          <a href="tel:+40931234567" class="footer__contacts-link hover-link">+4 (093) 123-45-67</a>
+        </address>
       </div>
     </footer>
     <div id="popup" class="popup">
       <div class="popup__body">
         <div class="popup__content">
-          <button data-popup-close type="button" class="popup__close close-popup" aria-label="Close popup">
+          <button data-popup-close type="button" class="popup__close close-popup" title="Close popup"
+            aria-label="Close popup">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30 10L10 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M10 10L30 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -251,7 +283,7 @@
           <form action="#" id="form-popup" class="popup__form form" novalidate>
             <fieldset class="form__fieldset">
               <label class="form__label form__name" for="userName-popup">
-                <span class="form__label-text">Ім'я</span>
+                <span class="form__label-text">Name</span>
                 <input type="text" name="user-name" id="userName-popup" required aria-describedby="nameError-popup">
                 <span class="error" id="nameError-popup"></span>
               </label>
@@ -262,12 +294,12 @@
               </label>
             </fieldset>
             <label class="form__label form__textarea" for="userTextarea-popup">
-              <span class="form__label-text">Повідомлення</span>
-              <textarea name="user-textarea" id="userTextarea-popup" placeholder="Розкажи про свої ідеї..." required
+              <span class="form__label-text">Message</span>
+              <textarea name="user-textarea" id="userTextarea-popup" placeholder="Tell us your ideas..." required
                 aria-describedby="textareaError-popup"></textarea>
               <span class="error" id="textareaError-popup"></span>
             </label>
-            <button type="submit" class="form__button button">Відправити</button>
+            <button type="submit" class="form__button button">Send</button>
           </form>
         </div>
       </div>

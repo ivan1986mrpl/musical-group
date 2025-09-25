@@ -1,4 +1,5 @@
 @use '../helpers' as *;
+@use '../base/header/header-fon';
 @use '../base/header/header-shadow';
 @use '../base/header/burger-2';
 @use '../base/header/menu-header';
@@ -9,7 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-dark);
+  // background-color: var(--color-dark);
 
   &__container-big {
     display: flex;

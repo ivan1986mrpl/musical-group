@@ -13,7 +13,13 @@
     position: relative;
   }
 
-  &__img {
+  &__text {
+    text-align: justify;
+    hyphens: auto; /* автоматические переносы */
+    word-break: normal; /* избегать ломания слов */
+  }
+
+  &__video {
     float: right;
     max-width: 40%;
     margin-bottom: 10px;

@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="description - Landing Page Гурту «Грим та Грім»">
-  <title>Гурт «Грим та Грім»</title>
+  <meta name="description" content="description - Landing Page of the band ‘Haze & Thunder’">
+  <title>Band “Haze & Thunder”</title>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -16,14 +16,61 @@
 
 <body>
   <div class="wrapper">
-    <header id="header" class="header">
+    <header id="header" class="header" data-js-header>
+      <div class="header__container-big">
+        <a href="#hero" class="header__logo logo" aria-label="home" title="home">G&G</a>
+        <div class="header__overlay">
+          <nav class="header__menu menu" data-js-header-menu>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#story" class="menu__link hover-link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#schedule" class="menu__link hover-link">Concerts</a>
+              </li>
+              <li class="menu__item">
+                <a href="#members" class="menu__link hover-link">Gallery</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link hover-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="header__burger-button burger-button" data-js-header-burger-button
+          aria-label="Open or close menu" title="Open or close menu">
+          <span class="burger-button__inner">
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </span>
+        </button>
+      </div>
     </header>
     <main class="page">
     </main>
     <footer id="footer" class="footer">
       <div class="footer__container">
+        <div class="footer__copy">© 2025 “Haze & Thunder”. All rights reserved.</div>
+        <ul class="footer__soc1al soc1al">
+          <li class="soc1al__item"><a href="https://www.instagram.com/" class="soc1al__link hover-link"
+              target="_blank">Instagram</a></li>
+          <li class="soc1al__item"><a href="https://www.youtube.com/" class="soc1al__link hover-link"
+              target="_blank">YouTube</a></li>
+          <li class="soc1al__item"><a href="https://www.facebook.com/" class="soc1al__link hover-link"
+              target="_blank">Facebook</a></li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__contacts-item">
+            <a href="mailto:booking@lotoplay" class="footer__contacts-link hover-link">booking@lotoplay</a>
+          </li>
+          <li class="footer__contacts-item">
+            <a href="tel:+380931234567" class="footer__contacts-link hover-link">+38 (093) 123-45-67</a>
+          </li>
+        </ul>
       </div>
     </footer>
+
   </div>
 </body>
 

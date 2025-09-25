@@ -11,9 +11,12 @@ export default function pageNavigation() {
         ) {
           e.preventDefault();
           const goToBlock = document.querySelector(menuLink.dataset.goto);
+          // const goToBlockValue =
+          // goToBlock.getBoundingClientRect().top + pageYOffset;
           const goToBlockValue =
-            goToBlock.getBoundingClientRect().top + pageYOffset;
-          // const goToBlockValue = goToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+            goToBlock.getBoundingClientRect().top +
+            pageYOffset -
+            document.querySelector('header').offsetHeight;
 
           window.scrollTo({
             top: goToBlockValue,
